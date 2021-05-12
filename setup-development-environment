@@ -7,6 +7,7 @@ set -euxo
 pip3 install -U vcstool rocker off-your-rocker
 
 : Get application sources
+mkdir -p src
 vcs import src < neato.repos
 
 : Create development environment image

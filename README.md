@@ -48,10 +48,14 @@ docker exec -it neato-dev /bin/bash
 source install/setup.bash
 ```
 
-## Usage examples
+## Usage
 
 
-Starting the simulation (this may take a while the first time you launch it in a fresh container - subsequent launches in the same container are much faster)
+### Starting the simulation
+
+this may take a while the first time you launch it in a fresh container - subsequent launches in the same container are much faster.
+
+This launches Gazebo, RViz, and the Neato robot (including its drive plugin)
 
 ```
 ros2 launch neato_gazebo neato_world.launch.py
