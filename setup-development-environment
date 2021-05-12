@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euxo
+
+: NOTE: you need docker installed already
+
+: Install workspace management tools
+pip3 install -U vcstool rocker off-your-rocker
+
+: Get application sources
+vcs import src < neato.repos
+
+: Create development environment image
+docker build . --pull -t neato-dev

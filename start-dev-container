@@ -1,0 +1,1 @@
+rocker --user --x11 neato-dev --oyr-run-arg "--name neato-dev -w /ws --cap-add=SYS_PTRACE -v $(pwd):/ws"

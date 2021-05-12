@@ -1,0 +1,5 @@
+repositories:
+  neato_description:
+    type: git
+    url: https://github.com/emersonknapp/neato_description
+    version: foxy-sim-test
